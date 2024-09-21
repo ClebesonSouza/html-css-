@@ -56,15 +56,17 @@ header>p{
     font-size: 1.2em;
     color: white;
     max-width: 600px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin: auto;
 }
 
 nav{
-    background-color: var(--cor5);
+    background-image: linear-gradient(to top, var(--cor4),var(--cor1));
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+    margin: auto;
+   
 }
 nav > a {
     color: white;
@@ -76,7 +78,7 @@ nav > a {
 
 }
 nav > a:hover{
-    background-color: var(--cor3);
+    background-color:var(--cor3);
 }
 
 main{
@@ -92,6 +94,8 @@ main{
 }
 
 main>h1{
+    
+    margin-bottom: 20px;
     padding: 4px;
     text-align: center;
     background-color:#2600d1c0;
@@ -111,7 +115,8 @@ main h2{
     background-image: linear-gradient(to bottom, var(--cor4),var(--cor1));
     text-indent: 5px;
     margin:15px auto 15px auto;
-    padding-top: 5px;
+    padding: 5px 0px;
+    
     border-radius: 5px;
     text-align: center;
     box-shadow: 2.3px 2.3px 5px rgba(0, 0, 0, 0.5);
@@ -124,7 +129,7 @@ main p{
     text-indent: 30px;
     font-size: 1.1em;
     line-height: 1.4em;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 3px 15px 3px;
 
 }
 main strong{   
@@ -140,14 +145,21 @@ main>div>img{
 }
 main>iframe{
 
-    width:auto;
     display: block;
-    margin: auto;
+    width: 56%;
+    margin:auto;
+    
+   
+    
+    
+    
+   
+   
 }
 picture>div>img{ /*img bjk trasparente*/
-    width:30%;
+    
     display: block;
-    margin: auto;
+    margin:auto;
    
    
 }
@@ -172,15 +184,14 @@ main a:hover{
     color: white;
     color: rgb(0, 0, 209);
 }
-div>p{
-    margin: 20px;
-    
-}
+
 article>P{
    background-image: linear-gradient(to left,var(--cor3),var(--cor0));
     font-size:1.5em;
     border-radius: 5px;
     box-shadow: 2.3px 2.3px 5px rgba(0, 0, 0, 0.5);
+    padding: 3px 0px;
+    margin-bottom: 40px;
 }
 footer{
 

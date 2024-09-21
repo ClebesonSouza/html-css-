@@ -27,7 +27,7 @@
 }
 
 
-body{background-color:var(--cor0);
+body{background-color:rgba(0, 0, 0, 0.305);
     font-family:var(--fonte-padrao) ;
     margin:0px;
     
@@ -44,7 +44,8 @@ header{
 }
 
 header h1{
-    
+    filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.402));
+
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 2.8em;
@@ -82,7 +83,7 @@ nav > a:hover{
 }
 
 main{
-    background-color: white;
+    background-color: rgb(235, 235, 255);
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -137,6 +138,7 @@ main strong{
 }
 
 main>div>img{
+
     width:30%;
     display: block;
     margin: auto;
@@ -148,20 +150,14 @@ main>iframe{
     display: block;
     width: 56%;
     margin:auto;
-    
-   
-    
-    
-    
-   
    
 }
 picture>div>img{ /*img bjk trasparente*/
-    
+
+    filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.587));    
     display: block;
     margin:auto;
-   
-   
+
 }
 
 main img.pequena{
@@ -192,6 +188,10 @@ article>P{
     box-shadow: 2.3px 2.3px 5px rgba(0, 0, 0, 0.5);
     padding: 3px 0px;
     margin-bottom: 40px;
+}
+
+aside>p{
+   text-align: center;
 }
 footer{
 

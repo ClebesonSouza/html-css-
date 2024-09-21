@@ -29,6 +29,8 @@
 
 body{background-color:var(--cor0);
     font-family:var(--fonte-padrao) ;
+    margin:0px;
+    
 
 }
 
@@ -38,9 +40,7 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
-
    
-
 }
 
 header h1{
@@ -81,7 +81,7 @@ nav > a:hover{
 
 main{
     background-color: white;
-    min-width: 500px;
+    min-width: 300px;
     max-width: 1000px;
     margin: auto;
     padding: 15px;
@@ -124,6 +124,7 @@ main p{
     text-indent: 30px;
     font-size: 1.1em;
     line-height: 1.4em;
+    padding: 15px 10px 15px 10px;
 
 }
 main strong{   
@@ -136,6 +137,12 @@ main>div>img{
     margin: auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
    
+}
+main>iframe{
+
+    width:auto;
+    display: block;
+    margin: auto;
 }
 picture>div>img{ /*img bjk trasparente*/
     width:30%;

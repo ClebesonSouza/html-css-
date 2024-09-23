@@ -142,7 +142,7 @@ main>div>img{
     width:30%;
     display: block;
     margin: auto;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.698);
    
 }
 main>iframe{
@@ -150,6 +150,7 @@ main>iframe{
     display: block;
     width: 76%;
     margin:auto;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.698);
    
 }
 picture>div>img{ /*img bjk trasparente*/

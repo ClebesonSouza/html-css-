@@ -49,36 +49,28 @@ p{
 
 }
 .nav{
-    margin-top: 3rem ;
     position: fixed;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 40rem;
-    padding:1.2rem;
+    width: 60%;
+    padding: 1rem 0 ;
     background: var(--nav-bg-color);
     border-radius: 5rem;
     z-index: 100;
 }
-
-
 .nav .nav-list{
     display: flex;
     justify-content: space-evenly;
+
 }
 
-
-/*nav novas informações e configurações*/
 a{
     color: var(--white-color);
 }
-
 a:hover{
     color: var(--main-color);
 }
-/*nav novas informações e configurações*/
-
-
-
 .nav-list li{
     position: relative;
     display: flex;
@@ -132,8 +124,9 @@ a:hover{
     height: 100%;
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vw;
-    transform: rotateY(-0deg);               /*    MUDAR BLOCOS DA PAGINA      */
-
+    transform: rotateY(-360deg);
+    transition: 2s;
+                  
 }
 .section{
     position: absolute;
@@ -173,8 +166,25 @@ a:hover{
 
 
 .section.contact{
-    visibility: hidden;
+   
+    transition-delay: .5s ;
 }
+
+.section.contact.active{
+    visibility: visible;
+
+}
+
+.section.contact.active-section{
+    transition-delay:1.5s;
+}
+
+.section.contact.active-section.active{
+    transition-delay:0s;
+}
+
+
+
 
 
 
@@ -188,18 +198,16 @@ a:hover{
 }
 
 .home-info h1{
-    margin: 2rem 0 -3rem ;
     font-size: 5.5rem;
     color: var(--main-color);
     line-height:1;
 }
 .home-info h3{
-    margin: 2rem 0 -3rem ;
     font-size: 3rem;
    
 }
 .desc{
-    margin: 3rem 0 4rem;
+    margin: 1rem 0 2rem;
 
 }
 .home-info .btn-sci{
@@ -208,7 +216,6 @@ a:hover{
 }
 
 .btn{
-    
     display:inline-flex;
     padding: 1.2rem 3rem;
     background: var(--main-color);
@@ -270,7 +277,7 @@ a:hover{
     position: absolute;
     top: 2rem;
     display: block;
-    width: 85%;
+    width: 85%;z
     object-fit: cover;
 }
 
@@ -613,6 +620,7 @@ a:hover{
 }
 
 .contact-form h3{
+    margin-top: 2rem;
     font-size: 3rem;
     color: var(--main-color);
     margin-bottom: 1.5rem;                  /*######Correto é 3  #####*/
@@ -643,12 +651,40 @@ a:hover{
 }
 
 .contact-form .contact-btn{
-    margin-top: 2rem;
+    
+    margin: 12px;
+    
+    
 
 } 
 
 .contact-form .contact-btn .btn{
+
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        padding: 0 4%;
+    }
+
+    .resume,
+    .portfolio {
+        padding-top: 1.5rem;
+        padding-bottom: 27rem;
+    }
+
+    .contact {
+        padding-top: 1.5rem;
+        padding-bottom: 18rem;
+    }
 }
 
 

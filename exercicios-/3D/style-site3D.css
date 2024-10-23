@@ -49,36 +49,29 @@ p{
 
 }
 .nav{
-    margin-top: 3rem ;
+    margin-top: 3rem;
     position: fixed;
+    bottom: 2px auto 3px auto;
     left: 50%;
     transform: translateX(-50%);
-    width: 40rem;
-    padding:1.2rem;
+    width: 45%;
+    padding: 1.1% ;
     background: var(--nav-bg-color);
     border-radius: 5rem;
     z-index: 100;
 }
 
-
-.nav .nav-list{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-/*nav novas informações e configurações*/
 a{
     color: var(--white-color);
 }
-
 a:hover{
     color: var(--main-color);
 }
-/*nav novas informações e configurações*/
+.nav .nav-list{
+    display: flex;
+    justify-content: space-evenly;
 
-
-
+}
 .nav-list li{
     position: relative;
     display: flex;
@@ -86,6 +79,8 @@ a:hover{
     cursor: pointer;
 
 }
+
+
 .nav-list li:hover, 
 .nav-list li.active{
     color: var(--main-color);
@@ -188,29 +183,27 @@ a:hover{
 }
 
 .home-info h1{
-    margin: 2rem 0 -3rem ;
     font-size: 5.5rem;
     color: var(--main-color);
     line-height:1;
 }
 .home-info h3{
-    margin: 2rem 0 -3rem ;
     font-size: 3rem;
    
 }
 .desc{
-    margin: 3rem 0 4rem;
+    margin: 1rem 0 2rem;
 
 }
 .home-info .btn-sci{
+    margin-bottom: -50px;
     display: flex;
     align-items: center;
 }
 
 .btn{
-    
     display:inline-flex;
-    padding: 1.2rem 3rem;
+    padding: 1.2rem 2rem;
     background: var(--main-color);
     border-radius: 5rem;
     box-shadow: 0 0 1rem var(--main-color);

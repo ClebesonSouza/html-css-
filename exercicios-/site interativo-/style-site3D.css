@@ -49,36 +49,21 @@ p{
 
 }
 .nav{
-    margin-top: 3rem ;
     position: fixed;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     width: 40rem;
-    padding:1.2rem;
+    padding: 2rem 0 ;
     background: var(--nav-bg-color);
     border-radius: 5rem;
     z-index: 100;
 }
-
-
 .nav .nav-list{
     display: flex;
     justify-content: space-evenly;
+
 }
-
-
-/*nav novas informações e configurações*/
-a{
-    color: var(--white-color);
-}
-
-a:hover{
-    color: var(--main-color);
-}
-/*nav novas informações e configurações*/
-
-
-
 .nav-list li{
     position: relative;
     display: flex;
@@ -108,8 +93,7 @@ a:hover{
 
 
 }
-.nav-list li:hover .tooltip, a:hover .tooltip, 
-.portfolio-item:hover .work-info{
+.nav-list li:hover .tooltip, a:hover .tooltip{
     visibility: visible;
     opacity: 1;
 
@@ -132,7 +116,7 @@ a:hover{
     height: 100%;
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vw;
-    transform: rotateY(-0deg);               /*    MUDAR BLOCOS DA PAGINA      */
+    transform: rotateY(-90deg);               /*    MUDAR BLOCOS DA PAGINA      */
 
 }
 .section{
@@ -160,23 +144,14 @@ a:hover{
     transform: translateX(50vw)translateZ(-50vw)rotateY(90deg);
 }
 
-
 .section.resume{
     transform: translateZ(-100vw) rotateY(-180deg);
     transform-origin: 50%;
+
 }
-
-
 .section.portfolio {
     transform: translateX(-50vw)translateZ(-50vw) rotateY(-90deg);
 }
-
-
-.section.contact{
-    visibility: hidden;
-}
-
-
 
 /*###### FIM DO SETOR PRINCIPAL DE ROTAÇÃO DAS PAGINAS #########*/
 
@@ -186,20 +161,17 @@ a:hover{
     align-items: center;
     gap:5rem
 }
-
 .home-info h1{
-    margin: 2rem 0 -3rem ;
     font-size: 5.5rem;
     color: var(--main-color);
     line-height:1;
 }
 .home-info h3{
-    margin: 2rem 0 -3rem ;
     font-size: 3rem;
    
 }
 .desc{
-    margin: 3rem 0 4rem;
+    margin: 1rem 0 2rem;
 
 }
 .home-info .btn-sci{
@@ -208,7 +180,6 @@ a:hover{
 }
 
 .btn{
-    
     display:inline-flex;
     padding: 1.2rem 3rem;
     background: var(--main-color);
@@ -446,7 +417,7 @@ a:hover{
 
 
 
- /*INFORMAÇÕES DO BROCO (003) work*/
+ /*INFORMAÇÕES DO BROCO (003) */
 
 .portfolio-box.work .portfolio-item{
     position: relative;
@@ -500,9 +471,6 @@ a:hover{
 
 .portfolio-item .work-info{
     z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s;
 }
 
 
@@ -517,140 +485,6 @@ a:hover{
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
-
-.portfolio-item .portfolio-icon a{
-    position: relative;
-    display: inline-flex;
-    padding: 1rem;
-    background: var(--white-color);
-    border-radius: 50%;
-    font-size: 2.5rem;
-    color: var(--bg-color);
-    transition: .3s;
-
-}
-
-.portfolio-item .work-icon a:hover{
-    background: var(--main-color);
-}
-
-.portfolio-item .work-icon a:nth-child(1){
-    margin: 1rem;
-
-}
-
-.portfolio-item .work-icon a:nth-child(1) i {
-    transform: rotate(135deg);
-    
-}
-
-/*INFORMAÇÕES DO BROCO (003) service*/
-
-.portfolio-item .service-icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .5rem;
-
-}
-
-.portfolio-item .service-icon .icon{
-    font-size: 5rem;
-    margin-left: -.3rem;
-    transition: .3s;
-    
-
-}
-
-.portfolio-item:hover .service-icon .icon{
-    color: var(--main-color);
-}
-
-.portfolio-item:hover .service-icon a{
-    background: var(--main-color);
-}
-
-.portfolio-item .service-icon a i{
-    transform: rotate(-135deg);
-    transition: .3s;
-
-}
-
-.portfolio-item .service-icon a:hover i{
-    transform: rotate(-180deg);
-}
-
-.portfolio-box.service .portfolio-item h4{
-    transition: .3s;
-}
-
-.portfolio-box.service .portfolio-item:hover h4{
-    color: var(--main-color);
-}
-
-
-/*--######################   INFORMAÇÕES DO BROCO  (04)   #########################*/
-
-
-.contact{
-    padding-top: 2rem;
-    padding-bottom: 18rem;
-}
-
-.contact-wrapper{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-
-}
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70rem;
-
-}
-
-.contact-form h3{
-    font-size: 3rem;
-    color: var(--main-color);
-    margin-bottom: 1.5rem;                  /*######Correto é 3  #####*/
-
-}
-
-.contact-form .field-box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-}
-
-.contact-form .field-box input,
-.contact-form .field-box textarea {
-    flex: 1 1 30rem;
-    padding: 2rem;
-    background: var(--third-bg-color);
-    border-radius: .6rem;
-    font-size: 1.6rem;
-    color: var(--white-color);
-}
-
-.contact-form .field-box textarea {
-    height: 12rem;                        /*  #####   Correto é 20    ########*/
-    resize: none;
-
-}
-
-.contact-form .contact-btn{
-    margin-top: 2rem;
-
-} 
-
-.contact-form .contact-btn .btn{
-    cursor: pointer;
-}
-
 
 
 

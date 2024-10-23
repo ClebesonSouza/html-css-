@@ -35,6 +35,8 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
+
 .wrapper .form-box.login{
     left: 0;
     padding: 0 60px 0 40px;
@@ -46,6 +48,10 @@ body{
     filter: blur(0);
     transition: .7s ease;
     transition-delay: calc(.1s * var(--j));
+}
+.wrapper .form-box.login h2{
+    margin-left: 10px;
+    padding-top: 80px;
 }
 
 .wrapper.active .form-box.login .animation{

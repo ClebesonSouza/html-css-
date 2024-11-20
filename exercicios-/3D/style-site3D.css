@@ -183,7 +183,7 @@ a:hover{
 }
 
 .home-info h1{
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: var(--main-color);
     line-height:1;
 }
@@ -240,6 +240,7 @@ a:hover{
 }
 
 .img-box{
+    right: 50px;
     position: relative;
     width: 32vw;
     height: 32vw;
